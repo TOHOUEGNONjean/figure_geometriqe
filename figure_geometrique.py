@@ -4,7 +4,7 @@
 	nous allons esseyer importer notre bibliothèque turtul
 '''
 from turtle import *
-from math import * 
+ 
  #creons notre écrant
 
 figure = Screen ()
