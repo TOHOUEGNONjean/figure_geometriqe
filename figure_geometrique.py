@@ -1,7 +1,7 @@
 #coding: utf-8
 
 '''
-	nous allons esseyer importer notre bibliothèque turtul
+	nous allons essayer d'importer notre bibliothèque turtul
 '''
 from turtle import *
  
@@ -14,12 +14,14 @@ figure.screensize( 1500 ,1000)# pour obtenir les barres de defilement
 #ma fenêtre sera nommé 'figure géométrique'. 
 #en utilisant la méthode title() on aura
 
-colormode(255) #pour utiliser lesvaleurs de 0 à 255
+figure.title(' Figure géométrique ')
 
-pensize(5) #donne une taille a notre crayon
+colormode(255) #pour utiliser les valeurs de 0 à 255
+
+pensize(5) #donne une taille à notre crayon
 
 figure.bgcolor(10,200,60) #on attibut une couleur verte à l'ecran
-figure.title(' Figure géométrique ')
+
 
 '''
 Notre ecrant est enfin crér, 
@@ -33,11 +35,15 @@ Un carré à 4 côtés et 4 angles droits
 NB: NOUS TRAVAILLONS DANS UN REPERE ORTHONOMME
 -------------------------------------------------
 
-le crayon au depart est placé au centre du repère
+le crayon au depart est placé a une position -200sur l'axe (OX) et 0 sur l'axe (OY) '''
 
-pour le moment, on ne modifie pas sa position d'origine
+up () #soulever le crayin avant de le déplacer
 
-debut
+goto ((-200,0)) #effectuer le deplacement
+
+down () #deposer le crayon sur l'ecran
+
+'''
 	le deplacé d'une distance donné vers la droite
 
 	------forward(120)
@@ -51,33 +57,29 @@ A chaque itération:
 apres trois itératons :
 	ON ARRETE
 '''
-up ()
 
-goto ((-200,0)) 
-
-down ()
 
 #initialisons notre entier i à 0
 
 
 i = 0
 while i < 4 :
-	forward ( 120 )
+	forward ( 120 ) #deplacement orizontal
 
-	left ( 90 )
+	left ( 90 ) #fait un quart de tour vert la gauche
 
 	i += 1
 # et là ça marche bien 
 #------------------------------------------------------------
-# remarquons que le crayon est revenu a l'origine du repère
+# remarquons que le crayon est revenu a sa position unitiale
 
-#commen dans la pratique, on le deplace pour consruit un autre figure
+#comme dans la pratique, on le deplace pour consruit un autre figure
 
-up () #il permet de soulever le crayon
+up () 
 
-goto ( 0, 0 ) # ramener à l'origine du repère
+goto ( 0, 0 ) 
 
-down () #et le positionne
+down ()
 
 #le parallellogramme
 
