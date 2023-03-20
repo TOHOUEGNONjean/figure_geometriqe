@@ -1,6 +1,6 @@
 Le code est en Python et utilise la bibliothèque Turtle pour dessiner des figures géométriques.
 
-Le code commence par importer les bibliothèques Turtle et Math. Ensuite, une nouvelle fenêtre graphique est créée en utilisant la méthode Screen() de la bibliothèque Turtle. La taille de l'écran est définie en utilisant la méthode screensize().
+Le code commence par importer les bibliothèques Turtle . Ensuite, une nouvelle fenêtre graphique est créée en utilisant la méthode Screen() de la bibliothèque Turtle. La taille de l'écran est définie en utilisant la méthode screensize().
 
 La couleur de fond de l'écran est définie en utilisant la méthode bgcolor() de la bibliothèque Turtle.
 
